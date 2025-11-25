@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Audio | Classic Event Management</title>
+    <title>MM Audios | Professional Event Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
@@ -44,7 +44,7 @@
 
         /* Header Styles */
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -232,71 +232,10 @@
             margin-bottom: 15px;
         }
 
-        /* Events Section */
-        .events {
-            padding: 100px 0;
-            background-color: white;
-        }
-
-        .events-slider {
-            position: relative;
-            overflow: hidden;
-            height: 500px;
-            border-radius: 10px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .slide.active {
-            opacity: 1;
-        }
-
-        .slide-content {
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            color: white;
-            padding: 30px;
-            width: 100%;
-        }
-
-        .slide-nav {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-
-        .slide-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .slide-dot.active {
-            background-color: white;
-        }
-
         /* Testimonials */
         .testimonials {
             padding: 100px 0;
-            background-color: var(--light);
+            background-color: white;
         }
 
         .testimonial-grid {
@@ -359,7 +298,7 @@
         /* Contact Section */
         .contact {
             padding: 100px 0;
-            background-color: white;
+            background-color: var(--light);
         }
 
         .contact-container {
@@ -420,49 +359,21 @@
         }
 
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 50px;
         }
 
-        .footer-column h3 {
-            color: var(--secondary);
-            margin-bottom: 25px;
-            position: relative;
-        }
-
-        .footer-column h3:after {
-            content: '';
-            display: block;
-            width: 40px;
-            height: 2px;
-            background-color: var(--secondary);
-            margin-top: 10px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
             color: var(--secondary);
         }
 
         .social-links {
             display: flex;
             gap: 15px;
-            margin-top: 20px;
         }
 
         .social-links a {
@@ -527,6 +438,12 @@
                 height: auto;
                 min-height: 100vh;
             }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
         }
 
         @media (max-width: 768px) {
@@ -548,37 +465,36 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">MM Audio</div>
+        <div class="logo">MM Audios</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#events">Events</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hero-content">
-            <h1>Crafting Unforgettable Moments</h1>
-            <p>Experience the art of event management with our classic approach to creating timely celebrations</p>
-            <a href="#contact" class="btn">Plan Your Event</a>
+            <h1>Professional Event Management</h1>
+            <p>Complete event solutions with professional audio systems, stage decoration, and expert planning</p>
+            <a href="#contact" class="btn">Book Our Services</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Our Legacy</h2>
+            <h2 class="section-title">About MM Audios</h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <h3>Over Two Decades of Excellence</h3>
-                    <p>The company started in 2011 as a small tent service. Step by step, it grew and transformed into a full event management company by 2024. Today, we handle every type of event — big or small.</p>
-                    <p>With so many years of experience in the industry, no matter how grand the event is, we have the ability to make it happen perfectly.</p>
+                    <h3>Your Complete Event Solution</h3>
+                    <p>"MM Audios Founded in 2011 as a modest local enterprise, we have progressively evolved and officially established ourselves as MM Audios Event Management in 2024".</p>
+                    <p>"With over a decade of continuous field experience, we possess the expertise and resources to successfully execute events of any scale and complexity".</p>
                     <a href="#services" class="btn btn-outline">Our Services</a>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Elegant Event Setting">
+                    <img src="photo-1653821355692-03666613499f.jpeg" alt="Professional Event Management">
                 </div>
             </div>
         </div>
@@ -591,16 +507,34 @@
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Wedding Planning">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Event Planning">
                     </div>
                     <div class="service-content">
-                        <h3>Wedding Planning</h3>
-                        <p>From intimate ceremonies to grand celebrations, we create the wedding of your dreams with meticulous attention to detail.</p>
+                        <h3>Event Planning</h3>
+                        <p>Complete event planning and coordination services for all types of events, ensuring seamless execution from concept to completion.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Corporate Events">
+                        <img src="img.jpeg" alt="Stage Decoration">
+                    </div>
+                    <div class="service-content">
+                        <h3>Stage Decoration</h3>
+                        <p>Creative and elegant stage designs that transform your event space and create the perfect ambiance for your occasion.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="DJ and Audio">
+                    </div>
+                    <div class="service-content">
+                        <h3>DJ and Audio</h3>
+                        <p>Professional DJ services with high-quality audio systems to keep your event energized and ensure crystal-clear sound.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images.jpeg" alt="Corporate Events">
                     </div>
                     <div class="service-content">
                         <h3>Corporate Events</h3>
@@ -609,44 +543,12 @@
                 </div>
                 <div class="service-card fade-in">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Social Celebrations">
+                        <img src="college-event.jpg" alt="School and College Events">
                     </div>
                     <div class="service-content">
-                        <h3>Social Celebrations</h3>
-                        <p>Birthdays, anniversaries, and milestone events crafted with personal touches and classic elegance.</p>
+                        <h3>School & College Events</h3>
+                        <p>Specialized event services for educational institutions including annual days, cultural festivals, and graduation ceremonies.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="events">
-        <div class="container">
-            <h2 class="section-title">Featured Events</h2>
-            <div class="events-slider">
-                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
-                    <div class="slide-content">
-                        <h3>Classic Winter Gala</h3>
-                        <p>An elegant evening of fine dining and entertainment at the Grand Ballroom</p>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
-                    <div class="slide-content">
-                        <h3>Summer Garden Wedding</h3>
-                        <p>A romantic outdoor celebration surrounded by blooming flowers</p>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
-                    <div class="slide-content">
-                        <h3>Corporate Leadership Summit</h3>
-                        <p>An inspiring gathering of industry leaders and innovators</p>
-                    </div>
-                </div>
-                <div class="slide-nav">
-                    <div class="slide-dot active" data-slide="0"></div>
-                    <div class="slide-dot" data-slide="1"></div>
-                    <div class="slide-dot" data-slide="2"></div>
                 </div>
             </div>
         </div>
@@ -659,43 +561,43 @@
             <div class="testimonial-grid">
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-text">
-                        <p>MM Audio transformed our wedding into a fairytale. Their attention to detail and classic approach made our day absolutely perfect.</p>
+                        <p>MM Audios provided exceptional audio and stage setup for our college cultural festival. The sound quality was perfect throughout the event.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Raj Kumar">
                         </div>
                         <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Wedding Client</p>
+                            <h4>Raj Kumar</h4>
+                            <p>College Event Coordinator</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-text">
-                        <p>The corporate gala they organized for our company exceeded all expectations. Professional, elegant, and flawlessly executed.</p>
+                        <p>The corporate event they managed for our company was flawless. Professional audio systems and excellent stage decoration.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Roberts">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
                         </div>
                         <div class="author-info">
-                            <h4>Michael Roberts</h4>
+                            <h4>Priya Sharma</h4>
                             <p>Corporate Client</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-text">
-                        <p>Our anniversary celebration was magical thanks to MM Audio. They captured our vision perfectly and added touches we never would have thought of.</p>
+                        <p>Our wedding reception was magical thanks to MM Audios. The DJ kept everyone dancing and the stage decoration was beautiful.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Chen">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Arun Patel">
                         </div>
                         <div class="author-info">
-                            <h4>Emily Chen</h4>
-                            <p>Anniversary Celebration</p>
+                            <h4>Arun Patel</h4>
+                            <p>Wedding Client</p>
                         </div>
                     </div>
                 </div>
@@ -709,15 +611,15 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
                 <div class="contact-info fade-in">
-                    <h3>Let's Create Something Memorable</h3>
-                    <p>Contact us to discuss your event and how we can bring your vision to life with our classic touch.</p>
+                    <h3>Let's Make Your Event Memorable</h3>
+                    <p>Contact us to discuss your event requirements and how we can bring your vision to life with our professional services.</p>
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
                             <h4>Our Location</h4>
-                            <p>123 Grand Avenue, Prestige District<br>Classic City, CC 10001</p>
+                            <p>14/15, Nainiyappan Street,<br>Old Washermenpet, Chennai 600021</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -726,7 +628,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Phone Number</h4>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+91 9025782256</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -735,7 +637,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Email Address</h4>
-                            <p>info@MM Audio.com</p>
+                            <p>mmaudios8@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -767,108 +669,44 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>MM Audio</h3>
-                    <p>Creating timeless events with classic elegance and modern sophistication since 1999.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Our Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Wedding Planning</a></li>
-                        <li><a href="#">Corporate Events</a></li>
-                        <li><a href="#">Social Celebrations</a></li>
-                        <li><a href="#">Venue Selection</a></li>
-                        <li><a href="#">Catering Services</a></li>
-                        <li><a href="#">Event Design</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for event inspiration and exclusive offers.</p>
-                    <form class="newsletter-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
+                <div class="footer-logo">MM Audios</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 MM Audio. All Rights Reserved.</p>
+                <p>&copy; 2023 MM Audios. All Rights Reserved. | Professional Event Management Services</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Slide Show Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const slides = document.querySelectorAll('.slide');
-            const dots = document.querySelectorAll('.slide-dot');
-            let currentSlide = 0;
-            
-            function showSlide(n) {
-                slides.forEach(slide => slide.classList.remove('active'));
-                dots.forEach(dot => dot.classList.remove('active'));
+        // Scroll animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        function checkScroll() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
                 
-                currentSlide = (n + slides.length) % slides.length;
-                
-                slides[currentSlide].classList.add('active');
-                dots[currentSlide].classList.add('active');
-            }
-            
-            // Auto advance slides
-            setInterval(() => {
-                showSlide(currentSlide + 1);
-            }, 5000);
-            
-            // Dot navigation
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    showSlide(index);
-                });
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
             });
-            
-            // Scroll animation
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            function checkScroll() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const windowHeight = window.innerHeight;
-                    
-                    if (elementTop < windowHeight - 100) {
-                        element.classList.add('visible');
-                    }
-                });
-            }
-            
-            // Check on load and scroll
-            window.addEventListener('load', checkScroll);
-            window.addEventListener('scroll', checkScroll);
-            
-            // Form submission
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
-            });
+        }
+        
+        // Check on load and scroll
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
         });
     </script>
 </body>

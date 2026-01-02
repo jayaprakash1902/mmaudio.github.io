@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Audios | Professional Event Management</title>
+    <title>MM Audio | Professional Event Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
@@ -351,6 +351,41 @@
             resize: vertical;
         }
 
+        /* Instagram Link in Contact Section */
+        .instagram-contact {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .instagram-contact h4 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .instagram-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .instagram-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .instagram-link i {
+            font-size: 1.2rem;
+        }
+
         /* Footer */
         footer {
             background-color: var(--dark);
@@ -413,6 +448,108 @@
             transform: translateY(0);
         }
 
+        /* About Section - Minimalistic Design */
+        .about {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background-color: var(--secondary);
+            margin: 15px auto;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .about-text p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* Clean paragraph separation without extra visual elements */
+        .about-text p + p {
+            margin-top: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+
+        .image-caption {
+            display: none; /* Hidden for minimal design */
+        }
+
+        /* Responsive for About Section Only */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .about-text, .about-image {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                padding: 60px 0;
+            }
+            
+            .about-text h3 {
+                font-size: 1.6rem;
+            }
+            
+            .about-text p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
         /* Responsive Styles */
         @media (max-width: 992px) {
             .about-content, .contact-container {
@@ -459,25 +596,30 @@
             nav ul li {
                 margin: 0 10px 10px;
             }
+            
+            .instagram-link {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">MM Audios</div>
+        <div class="logo">MM Audio</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hero-content">
             <h1>Professional Event Management</h1>
-            <p>Complete event solutions with professional audio systems, stage decoration, and expert planning</p>
+            <p>Complete event solutions with professional audio systems, stage decoration and expert planning</p>
             <a href="#contact" class="btn">Book Our Services</a>
         </div>
     </header>
@@ -485,18 +627,22 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About MM Audios</h2>
+            <h2 class="section-title">Our Story & Evolution</h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <h3>Your Complete Event Solution</h3>
-                    <p>"MM Audios Founded in 2011 as a modest local enterprise, we have progressively evolved and officially established ourselves as MM Audios Event Management in 2024".</p>
-                    <p>"With over a decade of continuous field experience, we possess the expertise and resources to successfully execute events of any scale and complexity".</p>
-                    <a href="#services" class="btn btn-outline">Our Services</a>
+                    <h3>From Humble Beginnings to Complete Event Mastery</h3>
+                    <p>Founded in 2011 as a specialized event resource provider, MM Audio began with a simple mission: to supply the essential elements that bring celebrations to life. What started as a modest local enterprise with our own comprehensive warehouse has blossomed into a full-spectrum event management solution.</p>
+                    
+                    <p>Our journey has been marked by continuous evolution. While we built our reputation on reliably sourcing and delivering every item an event might require, we listened to our clients' growing needs. This led us to expand into audio excellence, investing in premium sound systems and collaborating with curated DJ talent who share our commitment to creating unforgettable atmospheres.</p>
+                    
+                    <p>Today, as MM Audio Event Management, we proudly serve as the preferred production partner for prestigious venues including Mother Mahal in North Chennai, where we handle everything from immersive audio experiences to elegant stage design and floral artistry. Our capabilities span both intimate indoor gatherings and grand outdoor celebrations, supported by specialized equipment and a network of trusted professionals.</p>
+                    
+                    <p>With over a decade of hands-on experience and the trust of countless clients, we transform visions into reality—seamlessly executing events of any scale with precision, creativity, and unwavering attention to detail.</p>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="photo-1653821355692-03666613499f.jpeg" alt="Professional Event Management">
+                    <img src="photo-1653821355692-03666613499f.jpeg" alt="MM Audio Event Management Team at Work">
                 </div>
-            </div>
+            </div>    
         </div>
     </section>
 
@@ -554,57 +700,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        <p>MM Audios provided exceptional audio and stage setup for our college cultural festival. The sound quality was perfect throughout the event.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Raj Kumar">
-                        </div>
-                        <div class="author-info">
-                            <h4>Raj Kumar</h4>
-                            <p>College Event Coordinator</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        <p>The corporate event they managed for our company was flawless. Professional audio systems and excellent stage decoration.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
-                        </div>
-                        <div class="author-info">
-                            <h4>Priya Sharma</h4>
-                            <p>Corporate Client</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        <p>Our wedding reception was magical thanks to MM Audios. The DJ kept everyone dancing and the stage decoration was beautiful.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Arun Patel">
-                        </div>
-                        <div class="author-info">
-                            <h4>Arun Patel</h4>
-                            <p>Wedding Client</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -637,26 +732,37 @@
                         </div>
                         <div class="contact-details">
                             <h4>Email Address</h4>
-                            <p>mmaudios8@gmail.com</p>
+                            <p>mmaudio8@gmail.com</p>
                         </div>
+                    </div>
+                    
+                    <!-- Instagram Link in Contact Section -->
+                    <div class="instagram-contact fade-in">
+                        <h4>Follow Us on Instagram</h4>
+                        <a href="https://www.instagram.com/mmaudios8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                           class="instagram-link" 
+                           target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            Follow @mmaudios8
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form fade-in">
-                    <form id="contactForm">
+                    <form action="https://formspree.io/f/mzdzrnwr" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Event Type">
+                            <input type="text" name="event_type" class="form-control" placeholder="Event Type">
                         </div>
                         <div class="form-group">
-                            <input type="date" class="form-control" placeholder="Event Date">
+                            <input type="date" name="event_date" class="form-control" placeholder="Event Date">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Tell us about your event..." required></textarea>
+                            <textarea name="message" class="form-control" placeholder="Tell us about your event..." required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -669,16 +775,11 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">MM Audios</div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+                <div class="footer-logo">MM Audio</div>
+                <!-- Removed social links from footer since they're now in contact section -->
             </div>
             <div class="copyright">
-                <p>&copy; 2023 MM Audios. All Rights Reserved. | Professional Event Management Services</p>
+                <p>&copy; 2023 MM Audio. All Rights Reserved. | Professional Event Management Services</p>
             </div>
         </div>
     </footer>
@@ -701,13 +802,6 @@
         // Check on load and scroll
         window.addEventListener('load', checkScroll);
         window.addEventListener('scroll', checkScroll);
-        
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
-        });
     </script>
 </body>
 </html>
